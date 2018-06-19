@@ -1,0 +1,9 @@
+{
+    "path" : "~/GitHub/RTableau",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
