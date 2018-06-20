@@ -1,6 +1,6 @@
 # RTableau
 
-A quick and easy way to convert an R data.frame to a Tableau .tde or .hyper Extract.
+A quick and easy way to convert an R data.frame to a [Tableau](https://www.tableau.com/) .tde or .hyper Extract.
 
 ## Getting Started
 
