@@ -5,7 +5,7 @@ A quick and easy way to convert an R data.frame to a [Tableau](https://www.table
 ## Getting Started
 
 ### Prerequisites
- - This package use R package [reticulate](https://github.com/rstudio/reticulate) as an interface to use my co-authored Python package [pandleau](https://github.com/bwiley1/pandleau). In order to use the package, you must install Python. [Anaconda Distribution](https://www.anaconda.com/download/) is recommended. You can download either Python 2 or 3.
+ - This package uses R package [reticulate](https://github.com/rstudio/reticulate) as an interface to use my co-authored Python package [pandleau](https://github.com/bwiley1/pandleau). In order to use the package, you must install Python. [Anaconda Distribution](https://www.anaconda.com/download/) is recommended. You can download either Python 2 or 3.
  - After installation of Python, following the instruction in the `Prerequisites` and `Installing` section of [pandleau](https://github.com/bwiley1/pandleau) to install TableauSDK(or Extract API 2.0, depends on whether you want to output as .tde or .hyper format) and pandleau itself.
 
 ### Installing
