@@ -2,8 +2,8 @@ Package: RTableau
 Type: Package
 Title: Output Data into Tableau Extract Format
 Version: 0.1.0
-Author: Zhirui(Jerry) Wang
-Maintainer: Zhirui(Jerry) Wang <zw2389@columbia.edu>
+Author: Zhirui (Jerry) Wang
+Maintainer: Zhirui (Jerry) Wang <zw2389@columbia.edu>
 Description: A quick and easy way to convert a data.frame to a Tableau <https://www.tableau.com/> extract.
 Imports: reticulate
 License: MIT + file LICENSE

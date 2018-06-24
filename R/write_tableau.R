@@ -13,27 +13,11 @@
 #' @param add_index Add index column to Tableau Extract
 #' @examples
 #' \dontrun{
-#' # The most simple example is outputting iris dataset into .tde or .hyper format:
-#' write_tableau(iris,"iris.tde")
+#' # Save iris dataset into .tde or .hyper format:
+#' write_tableau(iris, file.path(tempdir(), "iris.tde"))
 #'
-#'
-#' # Another example that involves setting spatial column and add index:
-#' # I grabbed the following Brazil flights data off of kaggle for this example:
-#' # https://www.kaggle.com/microtang/exploring-brazil-flights-data/data.
-#' library(tidyverse)
-#' library(RTableau)
-#' # Read in the data and select first 1000 rows
-#' example_df <- read_csv("BrFlights2.csv")
-#' example_df <- slice(example_df,1:1000)
-#'
-#' # Set up a spatial column as `POINT (Lon Lat)` format
-#' example_df <- example_df %>%
-#'   mutate(SpatialDest = paste0("POINT (",round(LongDest,6)," ",round(LatDest,6),")"))
-
-#' # Write .tde or .hyper Extract!
-#' write_tableau(example_df,"BrFlights.tde","SpatialDest",add_index = T)
 #' }
-write_tableau <- function(data, path, spatial_columns=NA, spatial_indicator=T, add_index=F) {
+write_tableau <- function(data, path, spatial_columns=NA, spatial_indicator=TRUE, add_index=FALSE) {
   df_tableau <- pandleau$pandleau(reticulate::r_to_py(data))
   if(!is.na(spatial_columns)){
     spatial_columns <- ifelse(is.numeric(spatial_columns),spatial_columns-1,spatial_columns)

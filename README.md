@@ -44,7 +44,7 @@ write_tableau(example_df,"BrFlights.tde","SpatialDest",add_index = T)
 
 ## Authors
 
-* **Zhirui(Jerry) Wang**  - [zhiruiwang](https://github.com/zhiruiwang)
+* **Zhirui (Jerry) Wang**  - [zhiruiwang](https://github.com/zhiruiwang)
 
 ## License
 
